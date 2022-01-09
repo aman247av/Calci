@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/choco"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#50575C"
+        android:text="By AMAN VERMA" />
+
+    <TextView
+        android:focusableInTouchMode="false"
+        app:autoSizeTextType="uniform"
+        android:fontFamily="@font/choco"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeMaxTextSize="80sp"
+        app:autoSizeStepGranularity="2sp"
+        android:id="@+id/display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:textSize="28pt"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:gravity="end|bottom"
+        app:layout_constraintBottom_toTopOf="@id/numbers"
+        
+        android:text="0">
+    </TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numbers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TableRow
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/braco"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="cEvent"
+                android:text="("
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+            <Button
+                android:id="@+id/brackc"
+                android:text=")"
+                android:onClick="numberEvent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+
+            <Button
+                android:id="@+id/ln"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="ln"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/logx"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="log x"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/_10"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="@string/_10x"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/AC"
+                android:text="C"
+                android:onClick="numberEvent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#CDDADA"
+                android:background="@drawable/button"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+
+
+
+            <Button
+                android:id="@+id/backspace"
+                android:text="@string/backSpace"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:onClick="BackS"
+                android:gravity="center"
+                android:paddingEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_weight="1"
+                app:backgroundTint="#CDDADA"
+                android:background="@drawable/button"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+            <Button
+                android:id="@+id/plus_minus"
+                android:text="±"
+                android:onClick="numberEvent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#CDDADA"
+                android:background="@drawable/button"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:onClick="operatorEvent"
+                android:text="÷"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="@color/button_bg_color">
+            </Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="2ⁿ ͩ"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+            <Button
+                android:id="@+id/sq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="@string/sq"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="@string/cb"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/xroot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="@string/xroot"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="@string/expo"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="7"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#50575C">
+            </Button>
+
+
+            <Button
+                android:id="@+id/eight"
+                white
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="8"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#50575C">
+            </Button>
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="9"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#50575C">
+            </Button>
+
+            <Button
+                android:id="@+id/multi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:onClick="operatorEvent"
+                android:text="×"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="@color/button_bg_color">
+            </Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/recipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="1/x"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#2A2D30">
+            </Button>
+
+            <Button
+                android:id="@+id/sqroot"
+                android:text="@string/sqroot"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/cbroot"
+                android:text="@string/cbroot"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/yroot"
+                android:text="@string/yroot"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/perc"
+                android:text="%"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/four"
+                android:text="4"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/five"
+                android:text="5"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/six"
+                android:text="6"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:onClick="numberEvent"
+                android:layout_width="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                app:backgroundTint="@color/button_bg_color"
+                android:onClick="operatorEvent"
+                android:id="@+id/minus"
+                android:text="-"
+                android:layout_marginStart="4dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:fontFamily="@font/choco"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/xfact"
+                android:text="x!"
+                android:layout_marginEnd="4dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/choco"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/sin"
+                android:text="sin"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"   
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/cos"
+                android:text="cos"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"   
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/tan"
+                android:text="tan"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/e"
+                android:text="e"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/one"
+                android:text="1"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/two"
+                android:text="2"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/three"
+                android:text="3"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/plus"
+                android:text="+"
+                android:layout_marginStart="4dp"
+                android:onClick="operatorEvent"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:fontFamily="@font/choco"
+                android:layout_weight="1"
+                app:backgroundTint="@color/button_bg_color"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/rad"
+                android:text="rad"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/sinh"
+                android:text="sinh"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="16.19sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/cosh"
+                android:text="cosh"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="16.19sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+
+            <Button
+                android:id="@+id/tanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:text="tanh"
+                android:textSize="16.19sp"
+                android:textAllCaps="false"                app:backgroundTint="#2A2D30">
+            </Button>
+
+
+            <Button
+                android:id="@+id/pi"
+                android:text="@string/pi"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#2A2D30"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/dzero"
+                android:text="00"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"      
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/zero"
+                android:text="0"
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/point"
+                android:text="."
+                android:layout_marginLeft="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="numberEvent"
+                android:layout_marginRight="4dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/choco"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#50575C"
+                android:background="@drawable/button"
+                >
+            </Button>
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:fontFamily="@font/choco"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="equalsEvent"
+                android:text="="
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:backgroundTint="#FFC358">
+            </Button>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

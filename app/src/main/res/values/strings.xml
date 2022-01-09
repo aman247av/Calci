@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Calci</string>
-    <string name="backs">&lt;</string>
+    <string name="sqroot">√x</string>
+    <string name="sq">x²</string>
+    <string name="cbroot">∛x</string>
+    <string name="cb">x³</string>
+    <string name="xroot">xʸ</string>
+    <string name="ex"></string>
+    <string name="_10x">10 ͯ</string>
+    <string name="expo">e ͯ</string>
+    <string name="exp">e</string>
+    <string name="pi">π</string>
+    <string name="yroot">ʸ√x</string>
+
+
     <string name="backSpace">⌫</string>
 </resources>
