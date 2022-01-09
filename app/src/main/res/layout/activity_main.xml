@@ -29,7 +29,7 @@
         app:autoSizeStepGranularity="2sp"
         android:id="@+id/display1"
         android:layout_width="match_parent"
-        android:layout_height="50pt"
+        android:layout_height="46pt"
         android:layout_margin="10dp"
         android:ems="10"
         android:textSize="34pt"
@@ -75,6 +75,27 @@
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
 
+
+
+            <Button
+                android:id="@+id/backspace"
+                android:text="@string/backSpace"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:onClick="BackS"
+                android:gravity="center"
+                android:paddingEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="80dp"
+                android:layout_width="4dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/choco"
+                android:textSize="35sp"
+                android:layout_weight="1"
+                app:backgroundTint="#CDDADA"
+                android:background="@drawable/button"
+                style="?android:attr/buttonBarButtonStyle">
+            </Button>
             <Button
                 android:id="@+id/plus_minus"
                 android:text="±"
@@ -87,24 +108,6 @@
                 android:textSize="36sp"
                 android:textColor="@color/black"
                 android:layout_width="4dp"
-                android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
-                android:background="@drawable/button"
-                style="?android:attr/buttonBarButtonStyle">
-            </Button>
-
-            <Button
-                android:id="@+id/percent"
-                android:text="%"
-                android:layout_marginLeft="6dp"
-                android:layout_marginRight="6dp"
-                android:onClick="percentEvent"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_height="80dp"
-                android:layout_width="4dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/choco"
-                android:textSize="36sp"
                 android:layout_weight="1"
                 app:backgroundTint="#CDDADA"
                 android:background="@drawable/button"

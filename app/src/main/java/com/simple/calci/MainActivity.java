@@ -170,10 +170,14 @@ boolean New=true;
                 break;
         }
         String dis=""+result;
+        if(dis.length()>10)
+            dis=dis.substring(0,8)+""+dis.substring(dis.length()-3);
+
+
         if((dis.substring((dis.length()-2)).equals(".0")))
             display.setText(dis.substring(0,dis.length()-2));
         else
-            display.setText(result+"");
+            display.setText(dis+"");
 
     }
 
@@ -188,11 +192,14 @@ boolean New=true;
         New=true;
     }
 
-    public void percentEvent(View view) {
-        if(display.getText()!="-") {
-            double no = Double.parseDouble(display.getText().toString()) / 100;
-            display.setText(no + "");
-        }
-        New=true;
+    public void BackS(View view) {
+
+            String ss=display.getText().toString();
+            if(ss.length()!=1)
+            display.setText(ss.substring(0,ss.length()-1));
+            else
+                display.setText("0");
+
+        New=false;
     }
 }

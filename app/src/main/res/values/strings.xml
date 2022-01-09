@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Calci</string>
+    <string name="backs">&lt;</string>
+    <string name="backSpace">⌫</string>
 </resources>
