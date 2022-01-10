@@ -9,16 +9,17 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/raddis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/numbers"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
         android:fontFamily="@font/choco"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:textColor="#50575C"
-        android:text="By AMAN VERMA" />
+        android:text="Rad" />
 
     <TextView
         android:focusableInTouchMode="false"
@@ -28,19 +29,22 @@
         app:autoSizeMaxTextSize="80sp"
         app:autoSizeStepGranularity="2sp"
         android:id="@+id/display1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
-        android:ems="10"
+        android:ems="20"
+        android:textAllCaps="false"
         android:textSize="28pt"
         android:layout_weight="1"
         android:textColor="@color/white"
         android:gravity="end|bottom"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/numbers"
-        
+        app:layout_constraintStart_toEndOf="@id/raddis"
+        app:layout_constraintEnd_toEndOf="parent"
         android:text="0">
     </TextView>
 
@@ -71,12 +75,13 @@
                 android:background="@drawable/button"
                 android:fontFamily="@font/choco"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="cEvent"
+                android:onClick="numberEvent"
                 android:text="("
                 android:textAllCaps="false"
-                android:textColor="@color/white"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
             <Button
@@ -116,6 +121,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
 
@@ -136,6 +142,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
 
@@ -153,23 +160,25 @@
                 android:onClick="numberEvent"
                 android:text="@string/_10x"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
 
             <Button
                 android:id="@+id/AC"
                 android:text="C"
-                android:onClick="numberEvent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
+                android:onClick="cEvent"
                 android:layout_height="wrap_content"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
-                android:textAllCaps="false"                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#CDDADA"
@@ -209,7 +218,8 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
-                android:textAllCaps="false"                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#CDDADA"
@@ -224,6 +234,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/button"
+                android:textColor="@color/white"
                 android:fontFamily="@font/choco"
                 android:onClick="operatorEvent"
                 android:text="÷"
@@ -257,7 +268,9 @@
                 android:text="2ⁿ ͩ"
                 android:textAllCaps="false"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
             <Button
@@ -266,6 +279,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
+                android:textColor="@color/white"
                 android:layout_weight="1"
                 android:background="@drawable/button"
                 android:fontFamily="@font/choco"
@@ -275,6 +289,7 @@
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
 
@@ -292,7 +307,9 @@
                 android:text="@string/cb"
                 android:textAllCaps="false"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
 
@@ -306,11 +323,13 @@
                 android:background="@drawable/button"
                 android:fontFamily="@font/choco"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="numberEvent"
+                android:onClick="operatorEvent"
                 android:text="@string/xroot"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="#2A2D30">
+                android:textColor="@color/white"
+                app:backgroundTint="@color/btn_pow">
+
             </Button>
 
 
@@ -328,7 +347,9 @@
                 android:text="@string/expo"
                 android:textAllCaps="false"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
 
@@ -352,7 +373,7 @@
 
             <Button
                 android:id="@+id/eight"
-                white
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
@@ -395,6 +416,7 @@
                 android:fontFamily="@font/choco"
                 android:onClick="operatorEvent"
                 android:text="×"
+                android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:textSize="18sp"
                 app:backgroundTint="@color/button_bg_color">
@@ -425,7 +447,9 @@
                 android:text="1/x"
                 android:textAllCaps="false"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 app:backgroundTint="#2A2D30">
+
             </Button>
 
             <Button
@@ -441,6 +465,7 @@
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -456,7 +481,9 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
                 android:textSize="18sp"
-                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
                 android:background="@drawable/button"
@@ -472,11 +499,12 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:onClick="numberEvent"
+                android:onClick="operatorEvent"
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#2A2D30"
+                app:backgroundTint="@color/btn_pow"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -495,6 +523,7 @@
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -561,6 +590,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 android:textAllCaps="false"                android:fontFamily="@font/choco"
                 android:layout_weight="1"
                 android:background="@drawable/button"
@@ -592,6 +622,7 @@
                 android:fontFamily="@font/choco"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -606,10 +637,11 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
-                android:textAllCaps="false"   
+                android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -625,10 +657,11 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
-                android:textAllCaps="false"   
+                android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -647,6 +680,7 @@
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -662,9 +696,11 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
-                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -732,6 +768,7 @@
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:fontFamily="@font/choco"
                 android:layout_weight="1"
+                android:textColor="@color/white"
                 app:backgroundTint="@color/button_bg_color"
                 android:background="@drawable/button"
                 >
@@ -763,6 +800,7 @@
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -777,10 +815,11 @@
                 android:layout_marginRight="4dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
-                android:textSize="16.19sp"
+                android:textSize="16sp"
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -795,10 +834,12 @@
                 android:layout_marginRight="4dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
-                android:textSize="16.19sp"
-                android:textAllCaps="false"                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -816,8 +857,11 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
                 android:text="tanh"
-                android:textSize="16.19sp"
-                android:textAllCaps="false"                app:backgroundTint="#2A2D30">
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="#2A2D30">
+
             </Button>
 
 
@@ -834,6 +878,7 @@
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#2A2D30"
+                android:textColor="@color/white"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -848,7 +893,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
-                android:textAllCaps="false"      
+                android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 app:backgroundTint="#50575C"
@@ -896,10 +941,11 @@
                 android:id="@+id/equals"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/button"
                 android:fontFamily="@font/choco"
+                android:textColor="@color/white"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="equalsEvent"
                 android:text="="
