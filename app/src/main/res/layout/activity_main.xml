@@ -18,7 +18,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:textColor="#50575C"
-        android:text="By AMAN VERMA" />
+        android:text="iDeveloper!"
+        android:textStyle="bold"/>
 
     <TextView
         android:focusableInTouchMode="false"

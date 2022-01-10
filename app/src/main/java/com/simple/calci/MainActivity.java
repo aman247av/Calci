@@ -134,6 +134,8 @@ boolean New=true;
                         number = "" + (1 / Double.parseDouble(number));
                         break;
                     case R.id.sqroot:
+                        if(Double.parseDouble(number)<0)
+                            number="iDeveloper";
                         number = "" + Math.sqrt(Double.parseDouble(number));
                         break;
                     case R.id.cbroot:
