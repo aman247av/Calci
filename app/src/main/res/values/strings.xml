@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="app_name">iCalculator</string>
     <string name="sqroot">√x</string>
     <string name="sq">x²</string>
     <string name="cbroot">∛x</string>
