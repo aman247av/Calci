@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -33,11 +34,13 @@ boolean New=true;
         display=findViewById(R.id.display1);
 
         rad=findViewById(R.id.rad);
+        int orientation = getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE)
+                getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
     }
 
-    @SuppressLint("SetTextI18n")
     public void numberEvent(View view) {
         if (New)
             display.setText("0");
@@ -46,8 +49,7 @@ boolean New=true;
         int min = 0;
         int dis_limit;
         String number = display.getText().toString();
-        String diss=display.getText().toString();
-        if(diss.endsWith("NaN") || diss.endsWith("Error") || diss.endsWith("Infinity"))
+        if(number.endsWith("NaN") || number.endsWith("Error") || number.endsWith("Infinity"))
             number="";
 
         int orientation = getResources().getConfiguration().orientation;
@@ -146,10 +148,14 @@ boolean New=true;
                         number = "" + Double.parseDouble(number) / 100;
                         break;
                     case R.id.xfact:
-                        int fact = 1;
-                        for (int i = 1; i <= Double.parseDouble(number); i++)
-                            fact *= i;
-                        number = "" + fact;
+                        long fact = 1;
+                        if(Integer.parseInt(number)<=25) {
+                            for (long i = 1; i <= Double.parseDouble(number); i++)
+                                fact *= i;
+                            number = "" + fact;
+                        }
+                        else
+                            number="Infinity";
                         break;
                     case R.id.sin:
                         number = "" + Math.sin(Double.parseDouble(number));
@@ -165,13 +171,13 @@ boolean New=true;
                             number = "" + 2.71828182845905;
                         break;
                     case R.id.sinh:
-                        number = "" + Math.sinh(Double.parseDouble(number));
+                        number = "" + Math.asin(Double.parseDouble(number));
                         break;
                     case R.id.cosh:
-                        number = "" + Math.cosh(Double.parseDouble(number));
+                        number = "" + Math.acos(Double.parseDouble(number));
                         break;
                     case R.id.tanh:
-                        number = "" + Math.tanh(Double.parseDouble(number));
+                        number = "" + Math.atan(Double.parseDouble(number));
                         break;
                     case R.id.pi:
                         if (number.equals("0"))
@@ -191,6 +197,8 @@ boolean New=true;
                 number = number.substring(1);
             if (number.length() == 1 && number.charAt(0) == '.')
                 number = 0 + "" + number;
+            if(number.length()>16)
+                number=number.substring(0, 13) + "" + number.substring(number.length() - 3);
 
             display.setText(number);
         }
@@ -279,10 +287,12 @@ boolean New=true;
             String dis = "" + result;
             int orientation = getResources().getConfiguration().orientation;
             if (orientation != Configuration.ORIENTATION_LANDSCAPE) {
-                // In landscape
                 if (dis.length() > 10)
                     dis = dis.substring(0, 8) + "" + dis.substring(dis.length() - 3);
             }
+            else
+            if (dis.length() > 16)
+                dis = dis.substring(0, 13) + "" + dis.substring(dis.length() - 3);
 
 
 
