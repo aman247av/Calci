@@ -170,6 +170,7 @@
             <Button
                 android:id="@+id/AC"
                 android:text="C"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:onClick="cEvent"
@@ -181,7 +182,7 @@
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
@@ -204,13 +205,14 @@
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
             <Button
                 android:id="@+id/plus_minus"
                 android:text="±"
+                android:textStyle="bold"
                 android:onClick="numberEvent"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
@@ -222,7 +224,7 @@
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
@@ -240,7 +242,9 @@
                 android:text="÷"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="@color/button_bg_color">
+                app:backgroundTint="@color/button_bg_color"
+                android:textStyle="bold">
+>
             </Button>
 
 
@@ -355,6 +359,7 @@
 
             <Button
                 android:id="@+id/seven"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
@@ -367,12 +372,13 @@
                 android:text="7"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="#50575C">
+                app:backgroundTint="#373739">
             </Button>
 
 
             <Button
                 android:id="@+id/eight"
+                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -386,11 +392,12 @@
                 android:text="8"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="#50575C">
+                app:backgroundTint="#373739">
             </Button>
 
             <Button
                 android:id="@+id/nine"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
@@ -403,7 +410,7 @@
                 android:text="9"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="#50575C">
+                app:backgroundTint="#373739">
             </Button>
 
             <Button
@@ -419,7 +426,8 @@
                 android:textColor="@color/white"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="@color/button_bg_color">
+                app:backgroundTint="@color/button_bg_color"                android:textStyle="bold"
+>
             </Button>
 
 
@@ -532,6 +540,7 @@
             <Button
                 android:id="@+id/four"
                 android:text="4"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_height="wrap_content"
@@ -541,7 +550,7 @@
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -550,6 +559,7 @@
             <Button
                 android:id="@+id/five"
                 android:text="5"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_height="wrap_content"
@@ -559,7 +569,7 @@
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -567,6 +577,7 @@
             <Button
                 android:id="@+id/six"
                 android:text="6"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_height="wrap_content"
@@ -576,13 +587,14 @@
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
 
             <Button
-                app:backgroundTint="@color/button_bg_color"
+                app:backgroundTint="@color/button_bg_color"                android:textStyle="bold"
+
                 android:onClick="operatorEvent"
                 android:id="@+id/minus"
                 android:text="-"
@@ -709,6 +721,7 @@
             <Button
                 android:id="@+id/one"
                 android:text="1"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
@@ -718,7 +731,7 @@
                 android:textSize="16sp"
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -727,6 +740,7 @@
             <Button
                 android:id="@+id/two"
                 android:text="2"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
@@ -736,7 +750,7 @@
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -744,6 +758,7 @@
             <Button
                 android:id="@+id/three"
                 android:text="3"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_height="wrap_content"
@@ -753,7 +768,7 @@
                 android:fontFamily="@font/choco"
                 android:textSize="18sp"
                 android:textAllCaps="false"                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -769,7 +784,8 @@
                 android:textAllCaps="false"                android:fontFamily="@font/choco"
                 android:layout_weight="1"
                 android:textColor="@color/white"
-                app:backgroundTint="@color/button_bg_color"
+                app:backgroundTint="@color/button_bg_color"                android:textStyle="bold"
+
                 android:background="@drawable/button"
                 >
             </Button>
@@ -884,6 +900,7 @@
             <Button
                 android:id="@+id/dzero"
                 android:text="00"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
@@ -894,7 +911,7 @@
                 android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -902,6 +919,7 @@
             <Button
                 android:id="@+id/zero"
                 android:text="0"
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
@@ -912,7 +930,7 @@
                 android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -920,6 +938,7 @@
             <Button
                 android:id="@+id/point"
                 android:text="."
+                android:textStyle="bold"
                 android:layout_marginLeft="4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="numberEvent"
@@ -930,7 +949,7 @@
                 android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -949,7 +968,9 @@
                 android:text="="
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                app:backgroundTint="#FFC358">
+                app:backgroundTint="@color/button_bg_color"
+                android:textStyle="bold"
+                >
             </Button>
 
 

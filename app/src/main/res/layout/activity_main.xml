@@ -70,8 +70,9 @@
                 android:textSize="36sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
@@ -92,8 +93,8 @@
                 android:textColor="@color/black"
                 android:fontFamily="@font/choco"
                 android:textSize="35sp"
-                android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
+               android:layout_weight="1"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
@@ -109,8 +110,9 @@
                 android:textSize="36sp"
                 android:textColor="@color/black"
                 android:layout_width="4dp"
-                android:layout_weight="1"
-                app:backgroundTint="#CDDADA"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 style="?android:attr/buttonBarButtonStyle">
             </Button>
@@ -124,7 +126,8 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
+               android:layout_weight="1"
+                android:textStyle="bold"
                 app:backgroundTint="@color/button_bg_color"
                 android:background="@drawable/button"
                 >
@@ -152,8 +155,9 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -169,8 +173,9 @@
                 android:fontFamily="@font/choco"
                 android:textSize="36sp"
                 android:layout_width="4dp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -186,8 +191,9 @@
                 android:layout_width="4dp"
                 android:fontFamily="@font/choco"
                 android:textSize="36sp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -201,7 +207,8 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
+               android:layout_weight="1"
+                android:textStyle="bold"
                 app:backgroundTint="@color/button_bg_color"
                 android:background="@drawable/button"
                 >
@@ -229,8 +236,9 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -246,8 +254,9 @@
                 android:onClick="numberEvent"
                 android:textSize="36sp"
                 android:layout_width="4dp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -263,8 +272,9 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:fontFamily="@font/choco"
                 android:textSize="36sp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -279,7 +289,8 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
+               android:layout_weight="1"
+                android:textStyle="bold"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -306,8 +317,9 @@
                 android:onClick="numberEvent"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -323,8 +335,9 @@
                 android:fontFamily="@font/choco"
                 android:textSize="36sp"
                 android:layout_width="4dp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -340,8 +353,9 @@
                 android:layout_width="4dp"
                 android:fontFamily="@font/choco"
                 android:textSize="36sp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#373739"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -355,7 +369,8 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
+               android:layout_weight="1"
+                android:textStyle="bold"
                 app:backgroundTint="@color/button_bg_color"
                 android:background="@drawable/button"
                 >
@@ -385,9 +400,10 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:fontFamily="@font/choco"
                 android:textSize="36sp"
+                android:textStyle="bold"
                 android:layout_width="4dp"
                 android:layout_weight="2.3"
-                app:backgroundTint="#50575C"
+                app:backgroundTint="#373739"
                 app:cornerRadius="200dp"
                 >
             </Button>
@@ -402,8 +418,9 @@
                 android:fontFamily="@font/choco"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:textSize="36sp"
-                android:layout_weight="1"
-                app:backgroundTint="#50575C"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="#A1A1A1"
                 android:background="@drawable/button"
                 >
             </Button>
@@ -417,8 +434,9 @@
                 android:layout_width="4dp"
                 android:textSize="36sp"
                 android:fontFamily="@font/choco"
-                android:layout_weight="1"
-                app:backgroundTint="#FFC358"
+               android:layout_weight="1"
+                android:textStyle="bold"
+                app:backgroundTint="@color/button_bg_color"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:background="@drawable/button"
                 >
